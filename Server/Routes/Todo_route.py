@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
-from Models.Todo_Model import TodoModel, UpdateTodoModel
-from Controllers import Todo_Controller
+from ..Models.Todo_Model import TodoModel, UpdateTodoModel
+from ..Controllers import Todo_Controller
 from pydantic import BaseModel
 from bson.errors import InvalidId
 

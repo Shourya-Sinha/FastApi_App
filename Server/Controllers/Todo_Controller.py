@@ -1,8 +1,8 @@
-from Config.Database import database
+from ..Config.Database import database
 from bson import ObjectId
 from datetime import datetime, timedelta
 from fastapi import HTTPException
-from Models.Todo_Model import TodoModel
+from ..Models.Todo_Model import TodoModel
 from dateutil import parser
 
 todo_collection = database["todos"]

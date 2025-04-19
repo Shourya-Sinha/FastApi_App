@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
-from Routes.Todo_route import router as TodoRouter
+from .Routes.Todo_route import router as TodoRouter
 from fastapi.responses import FileResponse,RedirectResponse
 import os
 app = FastAPI()

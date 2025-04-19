@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const axiosInstances = axios.create({
-  baseURL: 'http://127.0.0.1:8000/api/todos/',
+  // baseURL: 'http://127.0.0.1:8000/api/todos/',
+  baseURL: 'https://fastapi-mongo-todo-app.onrender.com/api/todos/',
   headers: {
     'Content-Type': 'application/json',
   },

@@ -18,7 +18,8 @@ export default function Router() {
       path: "/",
       element: <DashboardLayout />,
       children: [
-        { element: <Dashboard replace />, path: "dashboard", index: true },
+        // { element: <Dashboard replace />, path: "dashboard", index: true },
+        { element: <Dashboard />, path: "dashboard", index: true }, 
         { element: <HomePage />, path: "home" },
         { element: <CompletedTaskPage />, path: "completed-task" },
         { element: <TaskDetailPage />, path: "task-detail/:id" },
@@ -26,6 +27,7 @@ export default function Router() {
       ],
     },
     { path: "*", element: <Navigate to={Page404} replace /> },
+    // { path: "*", element: <Navigate to="/dashboard" replace /> },
   ]);
 }
 
